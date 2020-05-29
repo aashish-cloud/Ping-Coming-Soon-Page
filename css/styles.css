@@ -1,0 +1,187 @@
+/*
+  Gray : #969696
+  Very Dark Blue : #151F29
+  Blue : 	#4F7DF3
+  Pale Blue : #C2D3FF
+  Light Red : #FF5263
+  Light Green : #00FF00
+*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  color: #969696;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 2%;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.subscription {
+  color: #151F29;
+  font-weight: 400;
+}
+
+.dark {
+  color: #151F29;
+  font-weight: 700;
+}
+
+.contact-us {
+  padding: 1%;
+}
+
+.rounded-field {
+  border: 1px solid #969696;
+  border-radius: 50px;
+  font-family: 'Libre Franklin', sans-serif;
+  padding: 10px 20px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+.button {
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #4F7DF3;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 3px 5px 5px rgba(194, 211, 255);
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+.button:link , .button:visited {
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
+.button:active {
+  transform: translateY(-1px);
+}
+
+.button-dynamic-margin {
+  margin-top: 40px;
+  /* transition: all .4s; */
+}
+
+.valid {
+  border: 1px solid #00FF00;
+}
+
+.invalid {
+  border: 1px solid #FF5263;
+}
+
+.error-msg {
+  display: inline-block;
+}
+
+.form {
+  position: relative;
+}
+
+.form::before {
+  content: 'Please provide a valid email address.';
+  text-align: justify;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 100%;
+  font-size: 12px;
+  font-style: italic;
+  color: #FF5263;
+}
+
+.dashboard-img {
+  max-width: 35%;
+  max-height: 45%;
+  padding: 3%;
+}
+
+.footer {
+  padding: 3%;
+
+  margin-top: auto;
+}
+
+.foot-icon {
+  padding: 10px 12px;
+  margin: 5px;
+  color: #4F7DF3;
+  border: 1px solid rgba(	150, 150, 150, .3);
+  border-radius: 100%;
+}
+
+.foot-icon:hover {
+  color: #fff;
+  border: 1px solid #4F7DF3;
+  background-color: #4F7DF3;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+@media (max-width: 990px) {
+  .header {
+    padding: 5%;
+  }
+
+  .form::before {
+    left: 0;
+    text-align: center;
+  }
+
+  .button {
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .dashboard-img {
+    max-width: 70%;
+    max-height: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 10%;
+  }
+}
+
+@media (max-width: 340px) {
+  .button {
+    width: 100%;
+  }
+
+  .rounded-field {
+    width: 100%;
+  }
+}
